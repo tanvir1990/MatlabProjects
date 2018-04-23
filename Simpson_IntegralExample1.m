@@ -56,6 +56,9 @@ function [integrals] = calcIntegral ( X, Y)
         if mod (k,2) ~= 0           % All the odd-indexed Y values have coefficient of 4. So, we are combining them here together
             I3 = 2 * newY(k+2);
         end
+		
+		if k == length(Y)
+			I4 = newY(k);
 
     end
 
