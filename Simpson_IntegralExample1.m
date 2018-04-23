@@ -57,7 +57,7 @@ function [integrals] = calcIntegral ( X, Y)
             I3 = 2 * newY(k+2);
         end
 		
-		if k == length(Y)
+		if k == length(Y)			%If K reaches to the last node, then there is no coefficient. It will just be added to the sum.
 			I4 = newY(k);
 
     end
